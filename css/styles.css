@@ -1,0 +1,130 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 15pt;
+    background-color: #9E7ACA;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    background-color: #FFAEC9;
+    width:1000px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-color: #3F48CC;
+    border-style: solid;
+    border-radius: 8px;
+}
+section{
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    transform: translate(-138px,0);
+    background-color: #FFAEC9;
+    width:1250px;
+    margin: auto;
+    padding: 10px;
+    border-spacing: 10px;
+    border-color: #3F48CC;
+    border-style: solid;
+    border-radius: 8px;
+}
+h1 {
+    text-align:center;
+    color:#3F48CC;
+}
+h2, h3 {
+    text-align:left;
+    margin: 0;
+    max-width: 555px;
+    color:#3F48CC;
+}
+h4 {
+    text-align:right;
+    margin: 0;
+    min-width: 555px;
+    color:#3F48CC;
+}
+p {
+    text-align:justify;
+    color:#3F48CC;
+}
+a:link {
+  color: #3F48CC;
+}
+a:active {
+  color: #3F48CC;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 1px;
+    padding: 2px;
+    overflow: hidden;
+    flex-grow: 2;
+    font-size: 30pt;
+}
+ul l{
+    float: left;
+}
+ul a{
+    display: block;
+    align-items: center;
+    background-color:#FFAEC9;
+    color: #3F48CC;
+    border-color: #3F48CC;
+    text-decoration: none;
+    border-style: outset;
+    margin-left: 14px;
+}
+ul l.active a{
+    display: block;
+    align-items: center;
+    background-color: #3F48CC;
+    color: #FFAEC9;
+    border-color: #FFAEC9;
+    border-style: inset;
+}
+ul :hover a{
+    display: block;
+    align-items: center;
+    background-color: #3F48CC;
+    color: #FFAEC9;
+    border-color: #FFAEC9;
+    border-style: outset;
+}
+@media(max-width: 1250px){
+    body, h1, h2, h3, h4, p{
+        width: auto;
+    }
+    header{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        align-items: center;
+    }
+    section{
+        height: auto;
+        width: auto;
+        align-items: center;
+        transform: translate(0,0);
+    }
+    nav{
+        display:block;
+        align-items: center;
+        padding: auto;
+        width: 100%;
+    }
+    nav l{
+        display:block;
+        width: 100%;
+        margin-right:auto;
+        padding: auto;
+    }
+}
